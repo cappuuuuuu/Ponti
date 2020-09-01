@@ -31,28 +31,28 @@ function Widget() {
         <li className="widget-square-item">
           <img src={require('../../assets/heightlight-desktop-1.png')} alt=""/>
           <div className="info">
-            <h3>Shop Promotions</h3>
+            <h5>Shop Promotions</h5>
             <p>Check out the latest offers in shops!</p>
           </div>
         </li>
         <li className="widget-square-item">
           <img src={require('../../assets/heightlight-desktop-2.png')} alt=""/>
           <div className="info">
-            <h3>Smart Buys</h3>
+            <h5>Smart Buys</h5>
             <p>Well-priced, high-quality wines!</p>
           </div>
         </li>
         <li className="widget-square-item">
           <img src={require('../../assets/heightlight-desktop-3.png')} alt=""/>
           <div className="info">
-            <h3>Top Rated Wines</h3>
+            <h5>Top Rated Wines</h5>
             <p>Wine scores 90 points or higher!</p>
           </div>
         </li>
         <li className="widget-square-item">
           <img src={require('../../assets/heightlight-desktop-4.png')} alt=""/>
           <div className="info">
-            <h3>Events</h3>
+            <h5>Events</h5>
             <p>What is happening now!</p>
           </div>
         </li>
