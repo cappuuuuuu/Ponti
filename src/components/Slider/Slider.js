@@ -2,9 +2,9 @@ import React from 'react';
 import './Slider.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel'
-import slider1 from '../../assets/slider-1.png'
-import slider2 from '../../assets/slider-2.png'
-import slider3 from '../../assets/slider-3.png'
+import slider1 from '../../assets/image/slider-1.png'
+import slider2 from '../../assets/image/slider-2.png'
+import slider3 from '../../assets/image/slider-3.png'
 
 function Slider() {
   return (
