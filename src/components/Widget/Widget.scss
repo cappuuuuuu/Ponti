@@ -1,5 +1,5 @@
 .widget-container {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 .widget-round {
     display: flex;
@@ -7,7 +7,7 @@
 
     .widget-round-item {
         width: 28% ;
-        margin: 0 30px;
+        margin: 0 15px;
         text-align: center;
 
         h3 {
@@ -17,6 +17,11 @@
         p {
             max-width: 270px;
             margin: 0 auto;
+        }
+
+        img {
+            max-width:200px;
+            width: 100%;
         }
     }
 }
@@ -30,14 +35,21 @@
 .widget-square {
     display: flex;
     justify-content: center;
+    
 
     .widget-square-item {
         position: relative;
         width: 22%;
         margin: 0 10px;
+        height: 300px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size:cover;
 
-        img {
-            width: 100%;
+        @for $i from 1 through 4{
+            &:nth-child(#{$i}){
+                background-image: url('../../assets/image/heightlight-desktop-#{$i}.png')
+            }
         }
 
         .info {
@@ -60,4 +72,25 @@
         }
     }
 
+}
+@media screen and (max-width:576px) {
+    .widget-square {
+        flex-direction: column;
+
+        .widget-square-item {
+            height: 200px;
+            width: 100%;
+            margin-bottom: 20px;
+
+            @for $i from 1 through 4{
+                &:nth-child(#{$i}){
+                    background-image: url('../../assets/image/heightlight-mobile-#{$i}.png')
+                }
+            }
+
+        }
+    }
+    .border-line {
+        margin: 30px auto 40px auto ;
+    }
 }
