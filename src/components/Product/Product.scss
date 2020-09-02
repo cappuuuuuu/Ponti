@@ -22,17 +22,19 @@
 
 .swiper-button-prev ,
 .swiper-button-next {
-    top: 50px !important;
+    top: 20px !important;
     left: auto !important;
+    right:0 !important;
     z-index: 1 !important;
     color: #000 !important;
     font-weight: 900;
     padding: 25px;
-    border: 2px solid rgb(165,135,112);
+    border: 1px solid rgb(165,135,112);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 40%;
-
+    outline:none;
+    margin-top: 0 !important;
     &::after {
         display: none
     }
@@ -40,12 +42,12 @@
 
 .swiper-button-prev {
     background-image: url('../../assets/image/prev.svg');
-    right: 100px !important ;
+    margin-right: 70px;
 }
 
 .swiper-button-next {
     background-image: url('../../assets/image/next.svg');
-    right: 30px !important ;
+    margin-right: 10px;
 }
 
 
