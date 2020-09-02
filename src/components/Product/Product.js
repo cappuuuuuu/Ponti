@@ -1,4 +1,4 @@
-import React , { useState, Fragment }from 'react';
+import React , { useState, useEffect }from 'react';
 import SwiperCore, {  Virtual , Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import FavoriteIcon from '@material-ui/icons/Favorite';
@@ -12,11 +12,31 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 SwiperCore.use([ Virtual,Navigation, Pagination, Scrollbar, A11y]);
 
 function ProductList ({ category }) {
+
+  const [isMobile , setMobile] = useState(null)
+
+  useEffect(()=>{
+
+    if (window.innerWidth <= 576) {
+      setMobile(true)
+    } else {
+      setMobile(false)
+    }
+
+    window.addEventListener('resize',()=>{
+      if (window.innerWidth <= 576) {
+        setMobile(true)
+      } else {
+        setMobile(false)
+      }
+    })
+  },[])
+
   return (
     <Swiper
       navigation 
-      spaceBetween={10}
-      slidesPerView={4}
+      spaceBetween={ 10 }
+      slidesPerView={ isMobile ? 1 : 4}
     >
     {
       products.map((product,index) => {
