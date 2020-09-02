@@ -1,0 +1,31 @@
+.cart-btn {
+    display: inline-block;
+    color: #fff;
+    height: 50px;
+    & > svg {
+        font-size : 50px;
+    }
+}
+
+.cart-btn {
+    position: relative;
+    span {
+        display: inline-block;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        background-color:red;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .cart-icon {
+        color : #000
+    }
+}
