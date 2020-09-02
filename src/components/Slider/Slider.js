@@ -7,12 +7,12 @@ import slider2 from '../../assets/image/slider-2.png'
 import slider3 from '../../assets/image/slider-3.png'
 
 function CarouselList(){
-  
+
   let list = []
 
   for(let i = 1 ; i < 4 ; i++) {
     list.push(
-      <Carousel.Item>
+      <Carousel.Item key={i}>
         <img
           className="d-block w-100"
           src={require(`../../assets/image/slider-${i}.png`)}
