@@ -5,9 +5,7 @@ import Home from './Home';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
+    <Home />,
   document.getElementById('root')
 );
 
