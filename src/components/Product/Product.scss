@@ -1,6 +1,5 @@
 .product {
     position: relative;
-    padding: 10px 20px;
     margin-bottom: 40px;
 
     & > .title {
@@ -12,7 +11,8 @@
 
 .swiper-wrapper {
     .swiper-slide {
-        padding: 10px;
+        padding:5px;
+        
     }
 }
 .swiper-container {
@@ -203,8 +203,8 @@
 
 
     .stock-status {
+        font-weight: bold;
         color: rgb(180, 29, 29);
-        margin-left: 5px;
         margin-top: -65px;
     }
 
@@ -230,7 +230,7 @@
     .input-cart-wrapper {
         display: flex;
         border: 1px solid #fff;
-        margin-right: 15px;
+        margin-right: 20px;
 
         .input-cart {
             width: 30px;
@@ -257,6 +257,89 @@
         border: none;
     }
 
+}
+
+@media screen and (max-width:576px) {
+    .product {
+        margin-bottom: 60px;
+        & > .title {
+            font-size: 1.5rem;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    .product-info {
+        .product-details {
+            display:none
+        }
+    }
+
+    .product-description {
+        .product-rate{
+            padding-top : 10px;
+            ul {
+                margin-bottom: 0;
+            }
+        }
+        .stock-status {
+            margin-top: 0px;
+        }
+
+        .product-details-mobile {
+            display: flex;
+            font-size: .8rem ;
+            font-weight: bold;
+            .category {
+                margin-right: 5px;
+            }
+            
+            p {
+                margin: 0;
+                line-height: 1.2;
+            }
+        }
+    }
+    .swiper-button-prev ,
+    .swiper-button-next {
+        top:-15px !important;
+    }
+
+    .product-cart {
+    
+        .input-cart-wrapper {
+            .input-cart {
+                width: 35px;
+                text-align: center;
+                outline: none;
+                border: none;
+                border-radius: 0;
+            }
+    
+            & > button {
+                display: inline-block;
+                width: 25px;
+                color: #fff;
+                background-color: rgb(165,135,112);
+                outline: none;
+                border: none;
+                border-radius: 0;
+                padding: 0;
+            }
+            
+        }
+    
+        .add-cart-btn {
+            padding: 5px 15px;
+            border-radius: 100px;
+            color: #fff ;
+            background-color: rgb(99,64,65);
+            outline: none;
+            border: none;
+        }
+    
+    }
+    
+    
 }
 
 
