@@ -63,6 +63,20 @@ function ProductList ({ category }) {
                       }
                     </ul>
                   </div>
+                    <div className="product-details-mobile">
+                        <div className="category">
+                          <p>Vintage:</p>
+                          <p>country:</p>
+                          <p>region:</p>
+                          <p>Size:</p>
+                        </div>
+                        <div className="info">
+                          <p>{ product.vintage }</p>
+                          <p>{ product.country }</p>
+                          <p>{ product.region }</p>
+                          <p>{ product.size }</p>
+                        </div>
+                    </div>
                     <div className="stock-status">{ product.stock ? '' : 'OUT OF STOCK' }</div>
                     <div className="product-price">HK${ product.price }</div>
                 </div>
