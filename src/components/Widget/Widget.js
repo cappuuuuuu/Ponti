@@ -22,7 +22,7 @@ function Widget() {
           <img src={widget3} alt=""/>
           <h3>Free Delivery</h3>
           <p>
-              Spend HK$1,800 to enjoy freedelivery to a single location in Hong Kong Island, Kowloon or New Territories
+              Spend <b>HK$1,800</b> to enjoy freedelivery to a single location in Hong Kong Island, Kowloon or New Territories
           </p>
         </li>
       </ul>
