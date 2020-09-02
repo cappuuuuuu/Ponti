@@ -44,7 +44,7 @@ table {
 
 @media screen and (min-width: 1279px) {
 	.restrict-width-container {
-		width :1450px;
+		width :1279px;
 		margin:0 auto;
 	}
 }
