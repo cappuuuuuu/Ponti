@@ -27,43 +27,45 @@ function MobileNav () {
     },[])
 
     return (
-        <div className="mobile-nav">
-            <div ref={navButtonEl} className="nav-btn">
-                <button>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-            <div ref={menuEl} className={`mobile-menu ${menuStatus?'active':''}`}>
-                <ul>
-                    <li>LOG IN / REGISTER</li>
-                    <li>SHOP</li>
-                    <li>PROMOTION</li>
-                    <li>EVENTS</li>
-                    <li>ABOUT US</li>
-                    <li>CONTACT</li>
-                </ul>
-                <div className="separate-line"></div>
-                <ul>
-                    <li>PRIVACY & POLICY</li>
-                    <li>TERMS OF USE</li>
-                    <li>COOKIES POLICY</li>
-                    <li>FAQ</li>
-                    <li>SEARCH</li>
-                </ul>
-                <div className="btn" onClick={ toggleMenu }>
-                    <CloseIcon className="close-btn"/>
+        <React.Fragment>
+            <div className="mobile-nav">
+                <div ref={navButtonEl} className="nav-btn">
+                    <button>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
+                <div ref={menuEl} className={`mobile-menu ${menuStatus?'active':''}`}>
+                    <ul>
+                        <li>LOG IN / REGISTER</li>
+                        <li>SHOP</li>
+                        <li>PROMOTION</li>
+                        <li>EVENTS</li>
+                        <li>ABOUT US</li>
+                        <li>CONTACT</li>
+                    </ul>
+                    <div className="separate-line"></div>
+                    <ul>
+                        <li>PRIVACY & POLICY</li>
+                        <li>TERMS OF USE</li>
+                        <li>COOKIES POLICY</li>
+                        <li>FAQ</li>
+                        <li>SEARCH</li>
+                    </ul>
+                    <div className="btn" onClick={ toggleMenu }>
+                        <CloseIcon className="close-btn"/>
+                    </div>
+                </div>
+                <div className="logo">
+                    <img src={require('../../assets/image/ponti_wine_cellars-logo BLACK.png')} alt="logo"/>
+                </div>
+                <Cart />
             </div>
-            <div className="logo">
-                <img src={require('../../assets/image/ponti_wine_cellars-logo BLACK.png')} alt="logo"/>
-            </div>
-            <Cart />
             <div className="shipping-info">
                 Free shipping for over $1,000
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 
