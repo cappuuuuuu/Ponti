@@ -17,14 +17,12 @@ function ProductList ({ category }) {
       navigation 
       spaceBetween={10}
       slidesPerView={4}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
     {
-      products.map((product) => {
+      products.map((product,index) => {
         if( product.category !== category ) return 
         return (
-          <SwiperSlide key={product.name}>
+          <SwiperSlide key={index}>
             <div className="product-item">
               <div className="product-info">
                 <div className="product-description">
