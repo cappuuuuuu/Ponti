@@ -10,19 +10,28 @@ function Footer() {
           <p>Ponti Wine Cellars is an online wine shop in Hong Kong. We offer a comprehensive range of top quality wines from all over the world such as USA, Italy, France, Spain, Argentina, Chile and etc.</p>
         </div>
         <div className="quick-link">
-          <ul className="link">
-            <li className="separate">ABOUT US</li>
-            <li className="separate">SHOP</li>
-            <li>WINE CLUB BENEFIT</li>
-          </ul>
-          <ul className="link">
-            <li className="separate">OUR STORES</li>
-            <li className="separate">CONTACT US</li>
-            <li>FAQ</li>
-          </ul>
-          <ul className="link">
-            <li>SITE MAP</li>
-          </ul>
+          <div className="link-wrapper desktop">
+            <ul className="link">
+              <li>ABOUT US &nbsp;|&nbsp; SHOP &nbsp;|&nbsp; WINE CLUB BENEFIT</li>
+            </ul>
+            <ul className="link">
+              <li>OUR STORES &nbsp;|&nbsp; CONTACT US &nbsp;|&nbsp; FAQ</li>
+            </ul>
+            <ul className="link">
+              <li>SITE MAP</li>
+            </ul>
+          </div>
+          <div className="link-wrapper mobile">
+            <ul className="link">
+              <li>ABOUT US &nbsp;| &nbsp;SHOP</li>
+              <li>WINE CLUB BENEFIT</li>
+            </ul>
+            <ul className="link">
+              <li>OUR STORES &nbsp;| &nbsp;CONTACT US</li>
+              <li>FAQ &nbsp;| &nbsp;SITE MAP</li>
+            </ul>
+          </div>
+          
           <div className="email">
             <p>NEWSLETTER</p>
             <input type="text" placeholder="Email Address"/>
@@ -36,21 +45,24 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="copyright">
-        <div className="statement">
-          <p>Under the law of Hong Kong, intoxicating liquor must not be sold or supplied to a minor in the course of business.</p>
-          <p>根據香港法律，不得在業務過程中，向未成年人售賣或供應令人醺醉的酒類。</p>
-          <p>@ 2020,Ponti Wine Cellars<span>Terms of Use &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp; Cookies Policy</span></p>
+      <div className="copyright-container">
+        <div className="copyright">
+          <div className="statement">
+            <p>Under the law of Hong Kong, intoxicating liquor must not be sold or supplied to a minor in the course of business.</p>
+            <p>根據香港法律，不得在業務過程中，向未成年人售賣或供應令人醺醉的酒類。</p>
+            <p>@ 2020,Ponti Wine Cellars<span>Terms of Use &nbsp;|&nbsp; Privacy Policy &nbsp;|&nbsp; Cookies Policy</span></p>
+          </div>
+          <ul className="payment">
+            <li><img src={require('../../assets/image/express.png')} alt=""/></li>
+            <li><img src={require('../../assets/image/applepay.png')} alt=""/></li>
+            <li><img src={require('../../assets/image/visa.png')} alt=""/></li>
+            <li><img src={require('../../assets/image/mastercard.png')} alt=""/></li>
+            <li><img src={require('../../assets/image/googlepay.png')} alt=""/></li>
+            <li><img src={require('../../assets/image/paypal.png')} alt=""/></li>
+          </ul>
         </div>
-        <ul className="payment">
-          <li><img src={require('../../assets/image/express.png')} alt=""/></li>
-          <li><img src={require('../../assets/image/applepay.png')} alt=""/></li>
-          <li><img src={require('../../assets/image/visa.png')} alt=""/></li>
-          <li><img src={require('../../assets/image/mastercard.png')} alt=""/></li>
-          <li><img src={require('../../assets/image/googlepay.png')} alt=""/></li>
-          <li><img src={require('../../assets/image/paypal.png')} alt=""/></li>
-        </ul>
       </div>
+      
     </div>
     
   );
