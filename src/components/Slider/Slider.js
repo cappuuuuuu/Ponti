@@ -6,47 +6,38 @@ import slider1 from '../../assets/image/slider-1.png'
 import slider2 from '../../assets/image/slider-2.png'
 import slider3 from '../../assets/image/slider-3.png'
 
+function CarouselList(){
+  
+  let list = []
+
+  for(let i = 1 ; i < 4 ; i++) {
+    list.push(
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={require(`../../assets/image/slider-${i}.png`)}
+          alt={`slider-${i}`}
+        />
+        <Carousel.Caption>
+          <h3>Trusted wine delivery</h3>
+          <p>with temperature controlled wine delivery truck</p>
+          <button>SEE MORE</button>
+        </Carousel.Caption>
+      </Carousel.Item>
+    )
+  }
+
+  return (
+    <Carousel indicators={false} >
+      {list}
+    </Carousel>
+  )
+}
+
 function Slider() {
   return (
     <div className="slider-container">
-      <Carousel indicators={false} >
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slider1}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>Trusted wine delivery</h3>
-            <p>with temperature controlled wine delivery truck</p>
-            <button>SEE MORE</button>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slider2}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>Trusted wine delivery</h3>
-            <p>with temperature controlled wine delivery truck</p>
-            <button>SEE MORE</button>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={slider3}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>Trusted wine delivery</h3>
-            <p>with temperature controlled wine delivery truck</p>
-            <button>SEE MORE</button>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <CarouselList />
     </div>
   );
 }
