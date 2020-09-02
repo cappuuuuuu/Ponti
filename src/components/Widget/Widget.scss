@@ -20,7 +20,7 @@
         }
 
         img {
-            max-width:200px;
+            max-width:180px;
             width: 100%;
         }
     }
@@ -39,9 +39,9 @@
 
     .widget-square-item {
         position: relative;
-        width: 22%;
-        margin: 0 10px;
-        height: 300px;
+        width: 25%;
+        margin:0 10px;
+        height: 280px;
         background-position: center center;
         background-repeat: no-repeat;
         background-size:cover;
@@ -58,7 +58,7 @@
             left: 0;
             width: 100%;
             text-align:center;
-            padding:10px 20px 5px 20px;
+            padding:10px 15px 5px 20px;
             color: #fff;
             background-color: rgba(95, 58, 22, .75);
 
@@ -74,12 +74,28 @@
 
 }
 @media screen and (max-width:576px) {
+
+    .widget-round {
+        .widget-round-item {
+            h3 {
+                font-size: 1.2rem;
+                margin-top: 30px;
+            }
+    
+            p {
+                max-width: 270px;
+                margin: 0 auto;
+            }
+        }
+    }
+
     .widget-square {
         flex-direction: column;
 
         .widget-square-item {
             height: 200px;
             width: 100%;
+            margin: 0 ;
             margin-bottom: 20px;
 
             @for $i from 1 through 4{
