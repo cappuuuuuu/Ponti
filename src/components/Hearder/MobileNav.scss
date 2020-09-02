@@ -84,4 +84,23 @@
             width: 100%;
         } 
     }
+
+    .shipping-info {
+        position: absolute;
+        z-index:2;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        background-color: rgb(82,80,80);
+        text-align:center
+    }
+}
+
+@media screen and (min-width:576px) {
+    .mobile-nav {
+        display: none;
+    }
 }

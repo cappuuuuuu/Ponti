@@ -60,6 +60,9 @@ function MobileNav () {
                 <img src={require('../../assets/image/ponti_wine_cellars-logo BLACK.png')} alt="logo"/>
             </div>
             <Cart />
+            <div className="shipping-info">
+                Free shipping for over $1,000
+            </div>
         </div>
     )
 }
