@@ -77,7 +77,7 @@ function ProductList ({ category }) {
                           <p>{ product.size }</p>
                         </div>
                     </div>
-                    <div className="stock-status">{ product.stock ? '' : 'OUT OF STOCK' }</div>
+                    <div className={`stock-status ${product.stock ? '' : 'soldout'}`}>OUT OF STOCK</div>
                     <div className="product-price">HK${ product.price }</div>
 
                   </div>

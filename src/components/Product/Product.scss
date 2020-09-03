@@ -203,9 +203,15 @@
 
 
     .stock-status {
+        position: absolute;
+        bottom: 80px;
         font-weight: bold;
         color: rgb(180, 29, 29);
-        margin-top: -65px;
+        visibility: hidden;
+
+        &.soldout {
+            visibility: visible;
+        }
     }
 
     .product-price {
