@@ -7,6 +7,9 @@
 
 In the project directory, you can run:
 
+### `yarn add`
+安裝專案所需之套件
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
