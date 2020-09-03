@@ -6,12 +6,13 @@
     justify-content: center;
 
     .widget-round-item {
-        width: 28% ;
+        width: 30% ;
         margin: 0 15px;
         text-align: center;
+        color:#666;
 
         h3 {
-            margin-top: 30px;
+            margin-top: 10px;
         }
 
         p {
@@ -93,7 +94,7 @@
         flex-direction: column;
 
         .widget-square-item {
-            height: 200px;
+            height: 150px;
             width: 100%;
             margin: 0 ;
             margin-bottom: 20px;
@@ -103,7 +104,16 @@
                     background-image: url('../../assets/image/heightlight-mobile-#{$i}.png')
                 }
             }
+            
+            .info {
+                h5 {
+                    font-size: 1rem;
+                }
 
+                p{
+                    font-size: .9rem;
+                }
+            }
         }
     }
     .border-line {
