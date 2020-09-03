@@ -22,13 +22,13 @@
 
 .swiper-button-prev ,
 .swiper-button-next {
-    top: 20px !important;
+    top: 25px !important;
     left: auto !important;
     right:0 !important;
     z-index: 1 !important;
     color: #000 !important;
     font-weight: 900;
-    padding: 25px;
+    padding: 20px;
     border: 1px solid rgb(165,135,112);
     background-repeat: no-repeat;
     background-position: center center;
@@ -42,7 +42,7 @@
 
 .swiper-button-prev {
     background-image: url('../../assets/image/prev.svg');
-    margin-right: 70px;
+    margin-right: 60px;
 }
 
 .swiper-button-next {
@@ -307,7 +307,11 @@
     }
     .swiper-button-prev ,
     .swiper-button-next {
-        top:-15px !important;
+        padding: 20px;
+        top: -5px !important;
+    }
+    .swiper-button-prev {
+        margin-right: 60px;
     }
 
     .product-cart {
