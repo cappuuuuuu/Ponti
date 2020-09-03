@@ -171,11 +171,12 @@
     }
 
     .product-rate{
-        padding-top: 50px;
+        position: absolute;
+        bottom: 90px;
 
         li {
             display: inline-block;
-            width: 18% ;
+            width: 40px ;
             text-align: center;
             margin-right: 5px;
             border : 1px solid rgb(75,44,20);
@@ -269,7 +270,7 @@
     .product {
         margin-bottom: 60px;
         & > .title {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             margin-left: 10px;
             margin-bottom: 10px;
         }
@@ -282,7 +283,7 @@
 
     .product-description {
         .product-rate{
-            padding-top : 10px;
+            bottom: 180px;
             ul {
                 margin-bottom: 0;
             }
@@ -292,6 +293,8 @@
         }
 
         .product-details-mobile {
+            position: absolute;
+            bottom : 110px;
             display: flex;
             font-size: .8rem ;
             font-weight: bold;
