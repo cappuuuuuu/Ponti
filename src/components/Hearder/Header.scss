@@ -44,6 +44,10 @@
     .contact {
         position: absolute;
         top: 40px;
+        
+        p {
+            margin-bottom: 0;
+        }
 
         .tel > span , 
         .email > span {
