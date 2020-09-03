@@ -7,7 +7,7 @@
 
 In the project directory, you can run:
 
-### `yarn add`
+### `yarn install`
 安裝專案所需之套件
 
 ### `yarn start`
